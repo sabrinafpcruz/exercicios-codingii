@@ -5,3 +5,9 @@
     text-align: center;
 
 }
+.resume{
+    text-align: center;
+}
+.resumo, ul{
+    list-style-type: none;
+}
