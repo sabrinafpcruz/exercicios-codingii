@@ -8,13 +8,13 @@ nav, a{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    color: #400505;
+    color: #1e1e1e;
     text-decoration: none;
     padding: 8px;
 }
 
-nav, a:active{
-    color: #400505;
+nav, a:hover{
+    color: #a78414;
 }
 
 #home{
@@ -65,14 +65,18 @@ tr:nth-child(even) {
     text-align: center;
 }
 
-.links, a{
+#formacao, li{
+    margin: 20px;
+}
+
+.links-social, a{
     display: flex;
     justify-content: center;
 }
 iframe{
     justify-content: flex-end;
     border-style: solid;
-    border-color: aqua;
+    border-color: none;
     height: 400px;
     width: 90%;
 }
