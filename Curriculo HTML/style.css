@@ -1,6 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    height: 800px;
+    align-items: center;
 }
 
 nav, a{
