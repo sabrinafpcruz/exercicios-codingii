@@ -1,5 +1,33 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+nav, a{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #400505;
+    text-decoration: none;
+    padding: 8px;
+}
+
+nav, a:active{
+    color: #400505;
+}
+
+#home{
+    margin: 10px;
+}
+
+.nav-iframe{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home, div, h1{
+    color: #1e1e1e;
 }
 
 table {
@@ -35,7 +63,15 @@ tr:nth-child(even) {
 #sobre{
     text-align: center;
 }
-#conteinerIframe{
-    width: 100%;
+
+.links, a{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    justify-content: flex-end;
+    border-style: solid;
+    border-color: aqua;
     height: 400px;
+    width: 90%;
 }
