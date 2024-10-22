@@ -50,9 +50,8 @@ header .social-icons {
 }
 
 header .social-icons a img {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1); /* Deixa os ícones brancos */
+    width: 32px;
+    height: 32px;
 }
 
 header .menu,
@@ -148,10 +147,12 @@ header .social-icons {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.skill-list{
+    text-align: center;
+}
 
 .skills-content .skill-list,
 .skills-content .software-list {
-    width: 45%;
     text-align: left;
 }
 
@@ -214,6 +215,7 @@ header .social-icons {
 .grid-projects{
     display: grid;
     grid-template-columns: auto auto;
+    align-items: stretch;
 }
 
 .project-card {
@@ -222,7 +224,8 @@ header .social-icons {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     max-width: 600px;
-    margin: 0 auto;
+    margin:0 auto 20px;
+    justify-content: space-evenly;
     text-align: left;
 }
 
