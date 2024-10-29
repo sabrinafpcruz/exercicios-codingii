@@ -14,10 +14,11 @@
     <header>
         <div class="logo">Sabrina Cruz</div>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Experiência</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#formulario">Contato</a></li>
         </ul>
         <div class="social-icons">
             <a href="https://www.behance.net/sabrinafpcruz"><img src="img/Behance.png" alt="Behance"></a>
@@ -27,13 +28,13 @@
     </header>
 
     <section class="hero">
-        <div class="intro-text">
+        <div id="home"class="intro-text">
             <h1>Olá, eu sou <span>Sabrina</span></h1>
             <h2>UI/UX Designer</h2>
             <p>Sou apaixonada por design, desenhar e gatos. Conheça mais sobre mim e sobre o meu trabalho.</p>
         </div>
     </section>
-    <section class="about">
+    <section id="sobre" class="about">
         <h2>Sobre Mim</h2>
         <div class="about-content">
             <img src="img/sabrina-photo.png" alt="Foto de Sabrina">
@@ -44,7 +45,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="habilidades" class="skills">
         <h2>Habilidades e Softwares</h2>
         <div class="skills-content">
             <div class="skill-list">
@@ -69,7 +70,7 @@
         </div>
     </section>
 
-    <section class="education">
+    <section id="experiencia" class="education">
         <h2>Educação e Experiência</h2>
         <ul>
             <li>Mar 2024 - Dez 2026: Analise e Desenvolvimento de Sistemas - Faculdade SENAC</li>
@@ -111,6 +112,72 @@
             </div>
         </div>
         
+    </section>
+    <section id="formulario" class="contact">
+        <h2>Contato</h2>
+        <form id="contactForm" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Formulário de Contato</legend>
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <label for="lingua">Língua Aplicada:</label>
+                <select id="lingua" name="lingua" required>
+                    <option value="ingles">Inglês</option>
+                    <option value="espanhol">Espanhol</option>
+                    <option value="frances">Francês</option>
+                    <option value="portugues">Português (pt-br)</option>
+                </select>
+
+                <label for="upload">Upload de Arquivo:</label>
+                <input type="file" id="upload" name="upload" accept=".pdf, .doc, .docx, .jpeg, .jpg, .png" required>
+
+                <label for="linguagens">Linguagens Preferidas:</label>
+                <select id="linguagens" name="linguagens" multiple required>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                </select>
+
+                <label>Banco de Dados Recomendado:</label>
+                <div>
+                    <input type="radio" id="sql" name="banco" value="sql" required>
+                    <label for="sql">SQL</label>
+                    <input type="radio" id="nosql" name="banco" value="nosql">
+                    <label for="nosql">NoSQL</label>
+                </div>
+
+                <label for="turno">Turno Preferido:</label>
+                <select id="turno" name="turno" required>
+                    <option value="manhã">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+
+                <label for="horario">Melhor Horário para Reuniões:</label>
+                <input type="time" id="horario" name="horario" required>
+
+                <label for="data">Previsão de Entrega:</label>
+                <input type="date" id="data" name="data" required>
+
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
     </section>
 
     <footer>
